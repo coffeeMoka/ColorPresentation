@@ -1,8 +1,11 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
+import {
+  Container,
+  Typography,
+  Box,
+  Link
+} from '@material-ui/core';
+import ColorTextField from './ColorTextField';
 
 function Copyright() {
   return (
@@ -24,6 +27,8 @@ export default function App() {
         <Typography variant="h2" component="h1" gutterBottom>
           Hello, World!
         </Typography>
+        <ColorTextField label="ベースカラー"/>
+        <input type="color"></input>
         <Copyright />
       </Box>
     </Container>
